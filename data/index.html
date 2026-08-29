@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ตั้งค่าระบบ - __DEPT_NAME__</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body class="page-wifi">
+    <header>
+      <div>
+        <h1>__DEPT_NAME__</h1>
+        <p>ระบบเฝ้าระวังและติดตามเจ้าหน้าที่ดับไฟป่า</p>
+      </div>
+    </header>
+    <div class="layout">
+      <div class="card">
+        <h2>WiFi Setting</h2>
+        __AP_BADGE____CURRENT_SSID__
+        <form action="/wifi/save" method="POST">
+          <label for="ssid">WiFi (SSID)</label
+          ><input
+            type="text"
+            id="ssid"
+            name="ssid"
+            placeholder="Wi-Fi"
+            required
+          /><label for="password">Password</label
+          ><input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+          /><button type="submit">Save &amp; Connect</button>
+        </form>
+      </div>
+      <div class="card desc">
+        <h2>Dashboard</h2>
+        <p>
+          หน้าติดตามข้อมูลสัญญาณชีพและตำแหน่งของเจ้าหน้าที่แบบเรียลไทม์
+          โดยระบบสามารถติดตามตำแหน่ง ข้อมูลสัญญาณชีพ และสถานะการปฏิบัติงาน
+          เพื่อนำมาแสดงผลบน Dashboard ข้อมูลตำแหน่งจะแสดงบนแผนที่
+          และแสดงอัตราการเต้นของหัวใจ (Heart Rate) กับระดับออกซิเจนในเลือด
+          (SpO₂) เพื่อช่วยประเมินสภาพร่างกายระหว่างปฏิบัติงาน
+        </p>
+        <a class="btn" href="/data">Go to Dashboard &rarr;</a>
+      </div>
+    </div>
+  </body>
+</html>

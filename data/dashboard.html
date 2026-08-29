@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard - __DEPT_NAME__</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page-dashboard">
+    <header class="brand-header">
+      <div class="brand-shield">WF</div>
+      <div>
+        <div class="brand-subtitle">
+          ระบบปฏิบัติการดับไฟป่าและดูแลความปลอดภัยของเจ้าหน้าที่
+        </div>
+        <h1>WILDFORCE</h1>
+        <div class="brand-tagline">
+          Smart Wildfire Operation and Personnel Safety
+        </div>
+      </div>
+      <a class="back" href="/">&larr; Go to Home</a>
+    </header>
+    <main class="dashboard">
+      <div class="alert-banner" id="alertBanner" style="display: none"></div>
+      <aside class="roster-panel">
+        <div class="roster-seal">W</div>
+        <div class="ranger-mark">RANGER</div>
+        <div class="roster-title">เจ้าหน้าที่ภาคสนาม</div>
+        <div class="roster-count">18 <small>นาย</small></div>
+        <div class="roster-list">
+          <span>01</span><span>02</span><span>03</span><span>04</span
+          ><span>05</span><span>06</span><span>07</span><span>08</span
+          ><span>09</span><span>10</span><span>11</span><span>12</span
+          ><span>13</span><span>14</span><span>15</span><span>16</span>
+        </div>
+      </aside>
+      <div class="active-ranger">RANGER <b>01</b></div>
+      <section class="info-panel">
+        <div class="field">
+          <div class="flabel">Name</div>
+          <div class="value" id="name">--</div>
+        </div>
+        <div class="field">
+          <div class="flabel">SpO2</div>
+          <div class="value" id="spo2">--</div>
+        </div>
+        <div class="field">
+          <div class="flabel">Heart Rate</div>
+          <div class="value" id="hr">--</div>
+        </div>
+        <div class="field">
+          <div class="flabel">Status</div>
+          <div class="status-box">
+            <div class="status-icon-wrap">
+              <span id="iconStand" class="status-icon active">●</span
+              ><span id="iconFall" class="status-icon">!</span
+              ><span id="iconLeanB" class="status-icon">&lt;</span
+              ><span id="iconLeanA" class="status-icon">&gt;</span>
+            </div>
+            <div class="status-label" id="statusLabel">--</div>
+          </div>
+        </div>
+        <div class="age" id="age"></div>
+      </section>
+      <section class="map-panel">
+        <iframe
+          class="mapframe"
+          id="mapFrame"
+          title="ตำแหน่งเจ้าหน้าที่"
+        ></iframe>
+        <div class="coords" id="coords">Lat: -- , Lon: --</div>
+      </section>
+      <section class="metric-panel hr-panel">
+        <strong class="metric-value" id="rightHr">--</strong>
+      </section>
+      <section class="metric-panel spo2-panel">
+        <strong class="metric-value" id="rightSpo2">--</strong>
+      </section>
+    </main>
+    <script src="dashboard.js"></script>
+  </body>
+</html>
