@@ -2,25 +2,29 @@
 <html lang="th">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="0; url=./preview.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Wildforce JSON Test</title>
-    <link rel="stylesheet" href="./data/Json_Test/preview.css" />
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        background: #dfe3e1;
+        font-family: "Segoe UI", Tahoma, sans-serif;
+      }
+      body {
+        display: grid;
+        place-items: center;
+      }
+      a {
+        color: #0b5fff;
+        text-decoration: none;
+        font-weight: 600;
+      }
+    </style>
   </head>
   <body>
-    <main class="dashboard">
-      <section class="info-panel">
-        <div class="field"><b>Name</b><strong id="name">--</strong></div>
-        <div class="field"><b>SpO2</b><strong id="spo2">--</strong></div>
-        <div class="field"><b>Heart Rate</b><strong id="hr">--</strong></div>
-        <div class="field"><b>Status</b><strong id="status">--</strong></div>
-      </section>
-      <section class="map-panel">
-        <iframe id="map" title="ตำแหน่งเจ้าหน้าที่"></iframe>
-        <small id="coordinates">Lat: --, Lon: --</small>
-      </section>
-      <strong class="metric hr" id="rightHr">--</strong>
-      <strong class="metric spo2" id="rightSpo2">--</strong>
-    </main>
-    <script src="./data/Json_Test/preview.js"></script>
+    <p>กำลังเปิดหน้า preview ... <a href="./preview.html">คลิกที่นี่หากหน้าไม่เปลี่ยน</a></p>
   </body>
 </html>
